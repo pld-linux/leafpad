@@ -1,11 +1,11 @@
 Summary:	GTK+2 based notepad clone
-Summary(pl):	Klon notepada bazuj±cy na GTK+
+Summary(pl):	Klon notepada oparty na GTK+
 Name:		leafpad
 Version:	0.7.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
-Source0:	http://tarot.freeshell.org/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://tarot.freeshell.org/leafoad/%{name}-%{version}.tar.gz
 # Source0-md5:	f1eacbaf4c4928aa345e10f5d290fac3
 Source1:	%{name}.desktop
 URL:		http://tarot.freeshell.org/leafpad/
@@ -19,9 +19,9 @@ similar to "notepad", and it aims to be lighter than GEdit and KWrite
 and to be as useful as them.
 
 %description -l pl
-Leafpad to prosty edytor tekstu bazuj±cy na GTK+. Program w
-za³o¿eniach ma byæ l¿ejszy od GEdit'a i KWrite'a, ale tak samo
-u¿yteczny jak one. Interfejs u¿ytkownika jest podobny do "notepad".
+Leafpad to prosty edytor tekstu oparty na GTK+. Program w za³o¿eniach
+ma byæ l¿ejszy od GEdita i KWrite'a, ale tak samo u¿yteczny jak one.
+Interfejs u¿ytkownika jest podobny do programu "notepad".
 
 %prep
 %setup -q
@@ -32,7 +32,6 @@ u¿yteczny jak one. Interfejs u¿ytkownika jest podobny do "notepad".
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 
 %{__make} install \
