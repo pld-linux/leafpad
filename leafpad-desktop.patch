@@ -1,15 +1,7 @@
-diff -urN leafpad-0.7.7.orig/leafpad.desktop leafpad-0.7.7/leafpad.desktop
---- leafpad-0.7.7.orig/leafpad.desktop	2004-11-21 14:18:23.753513432 +0100
-+++ leafpad-0.7.7/leafpad.desktop	2004-11-21 14:21:01.217575256 +0100
-@@ -7,6 +7,7 @@
- Comment[es]=Editor de texto simple
- Comment[fr]=Un éditeur de texte tout simple
- Comment[ja]=シンプルなテキストエディタ
-+Comment[pl]=Prosty edytor tekstu
- Comment[ru]=Простой текстовый редактор
- Comment[sv]=Enkel texteditor
- Comment[zh_CN]=简易文字编辑器
-@@ -15,4 +16,5 @@
+diff -urN leafpad-0.7.9.orig/leafpad.desktop leafpad-0.7.9/leafpad.desktop
+--- leafpad-0.7.9.orig/leafpad.desktop	2004-12-22 14:29:48.000000000 +0100
++++ leafpad-0.7.9/leafpad.desktop	2005-02-05 00:56:26.812967144 +0100
+@@ -22,4 +22,5 @@
  Icon=leafpad.png
  Terminal=false
  MimeType=text/plain
