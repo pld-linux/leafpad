@@ -2,13 +2,13 @@ Summary:	GTK+2 based notepad clone
 Summary(pl):	Klon notepada oparty na GTK+
 Name:		leafpad
 Version:	0.7.7
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	http://tarot.freeshell.org/leafpad/%{name}-%{version}.tar.gz
 # Source0-md5:	68ffcf53928565f651b316f5d1e86fa4
-Source1:	%{name}.desktop
 Patch0:		%{name}-undo_function_fix.patch
+Patch1:		%{name}-desktop.patch
 URL:		http://tarot.freeshell.org/leafpad/
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2.0.0
@@ -27,7 +27,8 @@ Interfejs u¿ytkownika jest podobny do programu "notepad".
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %build
 cp /usr/share/automake/config.sub .
@@ -36,18 +37,22 @@ cp /usr/share/automake/config.sub .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-
-install %{name}.png $RPM_BUILD_ROOT%{_pixmapsdir}
-install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+umask 022
+[ ! -x /usr/bin/update-desktop-database ] || /usr/bin/update-desktop-database >/dev/null 2>&1 ||:
+
+%postun
+umask 022
+[ ! -x /usr/bin/update-desktop-database ] || /usr/bin/update-desktop-database >/dev/null 2>&1
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
