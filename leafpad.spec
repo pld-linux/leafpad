@@ -1,12 +1,12 @@
 Summary:	GTK+2 based notepad clone
 Summary(pl):	Klon notepada oparty na GTK+
 Name:		leafpad
-Version:	0.7.2
+Version:	0.7.4
 Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
-Source0:	http://tarot.freeshell.org/leafoad/%{name}-%{version}.tar.gz
-# Source0-md5:	f1eacbaf4c4928aa345e10f5d290fac3
+Source0:	http://tarot.freeshell.org/leafpad/%{name}-%{version}.tar.gz
+# Source0-md5:	3aa3495d6071b1b2c049f0d52f35afe5
 Source1:	%{name}.desktop
 URL:		http://tarot.freeshell.org/leafpad/
 BuildRequires:	gtk+2-devel >= 2.0.0
