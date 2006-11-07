@@ -58,4 +58,4 @@ umask 022
 %doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
