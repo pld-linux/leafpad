@@ -1,5 +1,5 @@
 Summary:	GTK+2 based notepad clone
-Summary(pl):	Klon notepada oparty na GTK+
+Summary(pl.UTF-8):   Klon notepada oparty na GTK+
 Name:		leafpad
 Version:	0.8.9
 Release:	1
@@ -19,10 +19,10 @@ Leafpad is a simple GTK+ based text editor. The user interface is
 similar to "notepad", and it aims to be lighter than GEdit and KWrite
 and to be as useful as them.
 
-%description -l pl
-Leafpad to prosty edytor tekstu oparty na GTK+. Program w za≥oøeniach
-ma byÊ løejszy od GEdita i KWrite'a, ale tak samo uøyteczny jak one.
-Interfejs uøytkownika jest podobny do programu "notepad".
+%description -l pl.UTF-8
+Leafpad to prosty edytor tekstu oparty na GTK+. Program w za≈Ço≈ºeniach
+ma byƒá l≈ºejszy od GEdita i KWrite'a, ale tak samo u≈ºyteczny jak one.
+Interfejs u≈ºytkownika jest podobny do programu "notepad".
 
 %prep
 %setup -q
