@@ -1,5 +1,5 @@
 Summary:	GTK+2 based notepad clone
-Summary(pl.UTF-8):   Klon notepada oparty na GTK+
+Summary(pl.UTF-8):	Klon notepada oparty na GTK+
 Name:		leafpad
 Version:	0.8.9
 Release:	1
