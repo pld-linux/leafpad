@@ -58,4 +58,4 @@ umask 022
 %{_pixmapsdir}/*
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_iconsdir}/hicolor/*/apps/*.svg
-%{_desktopdir}/*.desktop
+%{_desktopdir}/%{name}.desktop
