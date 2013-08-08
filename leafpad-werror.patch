@@ -1,0 +1,30 @@
+diff -ur leafpad-0.8.18.1.orig/src/dialog.c leafpad-0.8.18.1/src/dialog.c
+--- leafpad-0.8.18.1.orig/src/dialog.c	2005-04-28 13:58:00.000000000 +0000
++++ leafpad-0.8.18.1/src/dialog.c	2013-08-08 08:58:11.268108476 +0000
+@@ -36,6 +36,7 @@
+ 		GTK_DIALOG_DESTROY_WITH_PARENT,
+ 		type,
+ 		GTK_BUTTONS_NONE,
++		"%s",
+ 		str);
+ 	gtk_window_set_resizable(GTK_WINDOW(dialog), FALSE);
+ 	gtk_dialog_add_buttons(GTK_DIALOG(dialog),
+@@ -61,6 +62,7 @@
+ 		GTK_DIALOG_DESTROY_WITH_PARENT,
+ 		GTK_MESSAGE_QUESTION,
+ 		GTK_BUTTONS_NONE,
++		"%s",
+ 		str);
+ 	gtk_window_set_resizable(GTK_WINDOW(dialog), FALSE);
+ 	gtk_dialog_add_buttons(GTK_DIALOG(dialog),
+diff -ur leafpad-0.8.18.1.orig/src/gtkprint.c leafpad-0.8.18.1/src/gtkprint.c
+--- leafpad-0.8.18.1.orig/src/gtkprint.c	2007-09-11 14:58:39.000000000 +0000
++++ leafpad-0.8.18.1/src/gtkprint.c	2013-08-08 08:56:16.642108445 +0000
+@@ -165,6 +165,7 @@
+ 		GTK_DIALOG_DESTROY_WITH_PARENT,
+ 		GTK_MESSAGE_ERROR,
+ 		GTK_BUTTONS_NONE,
++		"%s",
+ 		message);
+ 	gtk_window_set_resizable(GTK_WINDOW(dialog), FALSE);
+ 	gtk_dialog_add_buttons(GTK_DIALOG(dialog),
