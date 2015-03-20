@@ -2,7 +2,7 @@ Summary:	GTK+2 based notepad clone
 Summary(pl.UTF-8):	Klon notepada oparty na GTK+
 Name:		leafpad
 Version:	0.8.18.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	http://savannah.nongnu.org/download/leafpad/%{name}-%{version}.tar.gz
