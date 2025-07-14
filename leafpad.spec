@@ -26,7 +26,7 @@ Interfejs użytkownika jest podobny do programu "notepad".
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 cp /usr/share/automake/config.sub .
